@@ -16,7 +16,6 @@
     <% @sales.each do |sale| %>
       <tr>
         <td><%= sale.client %></td>
-        <td><%= sale.value %></td>
         <td><%= sale.desc %></td>
         <td><%= link_to 'Show', sale %></td>
         <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
