@@ -9,6 +9,10 @@
   <strong>Desc:</strong>
   <%= @sale.desc %>
 </p>
+<p>
+  <strong>Status:</strong>
+  <%= @sale.status %>
+</p>
 
 <%= link_to 'products', sale_products_path(@sale) %>
 <%= link_to 'Edit', edit_sale_path(@sale) %> |
