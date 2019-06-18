@@ -14,6 +14,8 @@
   <%= @sale.status %>
 </p>
 
-<%= link_to 'Produtos', sale_products_path(@sale) %>
+
+<%= link_to_if  @sale.status!="Close",'Produtos', sale_products_path(@sale)  %>
+
 <%= link_to 'Edit', edit_sale_path(@sale) %> |
 <%= link_to 'Back', sales_path %>
