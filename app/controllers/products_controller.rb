@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
   def index
     #@products = Product.all
    # @products = Product.where(sale_id: params[:sale_id]).all
-    @products = @sale.products.all
+    @products = @sale.products.all   
 
   end
 

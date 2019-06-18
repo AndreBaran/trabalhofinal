@@ -4,7 +4,8 @@ class SalesController < ApplicationController
   # GET /sales
   # GET /sales.json
   def index
-    @sales = Sale.all
+    #@sales = Sale.all
+    @sales = Sale.paginate(page: params[:page], per_page: 1)
   end
 
   # GET /sales/1
