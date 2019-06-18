@@ -12,18 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :client %><br>
+    <%= f.label :Cliente %><br>
     <%= f.text_field :client %>
   </div>
   <div class="field">
-    <%= f.label :desc %><br>
+    <%= f.label :Descricao %><br>
     <%= f.text_area :desc %>
   </div>
   <div class="field">
-    <%= f.label :status %><br>
-    <%= f.check_box :status, {}, "Comprada", "Aberta" %> <br />
+    <%= f.label :Comprada %><br>
+    <%= f.check_box :status, {}, "Close", "Open" %> <br />
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+   
 <% end %>

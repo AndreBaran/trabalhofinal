@@ -19,6 +19,7 @@ class SalesController < ApplicationController
 
   # GET /sales/1/edit
   def edit
+    
   end
 
   # POST /sales
